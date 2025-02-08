@@ -12,7 +12,7 @@ class _ResponsiveScreenState extends State<ResponsiveScreen> {
       MediaQuery.of(context).size.width >= 600;
   bool isScreenDesktop(BuildContext context) =>
       MediaQuery.of(context).size.width < 600;
-  bool isHi(BuildContext context) => MediaQuery.of(context).size.height < 500;
+  bool isHi(BuildContext context) => MediaQuery.of(context).size.height > 500;
   @override
   Widget build(BuildContext context) {
     double mediaWightSize = MediaQuery.of(context).size.width;

@@ -1,0 +1,1 @@
+ /home/nasir/newLessons/fluttertip/flutter_widget/.dart_tool/flutter_build/599ff7dc45902d5287354d0360af1829/native_assets.yaml: 

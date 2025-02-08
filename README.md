@@ -30,7 +30,7 @@ Clone this repository:
 
 bash
 Copy
-git clone https://github.com/your-username/flutter-widgets.git
+git clone https://github.com/Nasir-gaayte/flutter-widgets.git
 Open the project in your favorite IDE (e.g., VS Code or Android Studio).
 
 Explore the examples and code snippets in the examples/ folder.

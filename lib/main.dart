@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/mvvm/model_views/counterViewModel.dart';
 import 'package:flutter_widget/mvvm/model_views/postVewModel.dart';
+import 'package:flutter_widget/mvvm/model_views/userViewModel.dart';
 import 'package:flutter_widget/providers/dataProvider.dart';
 import 'package:flutter_widget/welcomeScreen.dart';
 import 'package:provider/provider.dart';
@@ -16,6 +17,9 @@ void main() {
       ),
       ChangeNotifierProvider(
         create: (context) => PostViewModel(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => UserViewModel(),
       ),
     ],
     child: const MyApp(),

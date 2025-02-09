@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/mvvm/views/counterView.dart';
 import 'package:flutter_widget/mvvm/views/postView.dart';
+import 'package:flutter_widget/mvvm/views/userView.dart';
 import 'package:flutter_widget/widgets/MyBottomAppBar.dart';
 import 'package:flutter_widget/widgets/alert.dart';
 import 'package:flutter_widget/widgets/assetsImage.dart';
@@ -52,7 +53,7 @@ class _HomePageState extends State<HomePage>
     Center(child: ResponsiveScreen()),
     Center(child: CounterView()),
     Center(child: PostView()),
-    Center(child: ContainerW()),
+    Center(child: AuthenticaedView()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
@@ -79,7 +80,7 @@ class _HomePageState extends State<HomePage>
     const Text('responsiveScreen'),
     const Text('CounterView'),
     const Text('Api Post View'),
-    const Text('contact'),
+    const Text('Authenticaed'),
     const Text('contact'),
     const Text('contact'),
     const Text('contact'),

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/mvvm/views/counterView.dart';
 import 'package:flutter_widget/widgets/MyBottomAppBar.dart';
 import 'package:flutter_widget/widgets/alert.dart';
 import 'package:flutter_widget/widgets/assetsImage.dart';
@@ -48,7 +49,7 @@ class _HomePageState extends State<HomePage>
     Center(child: YoutopPlayer()),
     Center(child: ExpansiontilePage()),
     Center(child: ResponsiveScreen()),
-    Center(child: ContainerW()),
+    Center(child: CounterView()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
@@ -75,7 +76,7 @@ class _HomePageState extends State<HomePage>
     const Text('YoutobePlayer'),
     const Text('expansionTile'),
     const Text('responsiveScreen'),
-    const Text('contact'),
+    const Text('CounterView'),
     const Text('contact'),
     const Text('contact'),
     const Text('contact'),
@@ -116,5 +117,3 @@ class _HomePageState extends State<HomePage>
     );
   }
 }
-
-

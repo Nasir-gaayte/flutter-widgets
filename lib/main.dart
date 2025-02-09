@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/mvvm/model_views/counterViewModel.dart';
 import 'package:flutter_widget/providers/dataProvider.dart';
 import 'package:flutter_widget/welcomeScreen.dart';
 import 'package:provider/provider.dart';
@@ -8,6 +9,9 @@ void main() {
     providers: [
       ChangeNotifierProvider(
         create: (context) => DataProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => CounterViewModel(),
       ),
     ],
     child: const MyApp(),
@@ -24,7 +28,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

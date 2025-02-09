@@ -53,6 +53,9 @@ class _HomePageState extends State<HomePage>
     Center(child: ContainerW()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
+    Center(child: ContainerW()),
+    Center(child: ContainerW()),
+    Center(child: ContainerW()),
   ];
   List<Widget> tab = [
     const Text('Container'),
@@ -72,6 +75,9 @@ class _HomePageState extends State<HomePage>
     const Text('YoutobePlayer'),
     const Text('expansionTile'),
     const Text('responsiveScreen'),
+    const Text('contact'),
+    const Text('contact'),
+    const Text('contact'),
     const Text('contact'),
     const Text('contact'),
     const Text('contact'),
@@ -105,8 +111,10 @@ class _HomePageState extends State<HomePage>
       ),
       persistentFooterButtons: [
         TextButton(onPressed: () {}, child: Text('submit')),
-        DropdownMenu(dropdownMenuEntries: List.empty())
+        DropdownMenu(dropdownMenuEntries: [])
       ],
     );
   }
 }
+
+

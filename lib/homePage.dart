@@ -15,6 +15,7 @@ import 'package:flutter_widget/widgets/cupertinoW.dart';
 import 'package:flutter_widget/widgets/expaned.dart';
 import 'package:flutter_widget/widgets/expansionTile.dart';
 import 'package:flutter_widget/widgets/gridview/gridview.dart';
+import 'package:flutter_widget/widgets/heroAnimations/hero.dart';
 import 'package:flutter_widget/widgets/listview/listview.dart';
 import 'package:flutter_widget/widgets/mediaQ.dart';
 import 'package:flutter_widget/widgets/myDrawer.dart';
@@ -54,6 +55,9 @@ class _HomePageState extends State<HomePage>
     Center(child: CounterView()),
     Center(child: PostView()),
     Center(child: AuthenticaedView()),
+    Center(child: HeroAnimations()),
+    Center(child: ContainerW()),
+    Center(child: ContainerW()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
@@ -81,6 +85,8 @@ class _HomePageState extends State<HomePage>
     const Text('CounterView'),
     const Text('Api Post View'),
     const Text('Authenticaed'),
+    const Text('HeroAinmation'),
+    const Text('contact'),
     const Text('contact'),
     const Text('contact'),
     const Text('contact'),

@@ -4,6 +4,7 @@ import 'package:flutter_widget/mvvm/model_views/postVewModel.dart';
 import 'package:flutter_widget/mvvm/model_views/userViewModel.dart';
 import 'package:flutter_widget/providers/dataProvider.dart';
 import 'package:flutter_widget/welcomeScreen.dart';
+import 'package:flutter_widget/widgets/heroAnimations/cardDommy.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -20,6 +21,9 @@ void main() {
       ),
       ChangeNotifierProvider(
         create: (context) => UserViewModel(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => DommyProvider(),
       ),
     ],
     child: const MyApp(),

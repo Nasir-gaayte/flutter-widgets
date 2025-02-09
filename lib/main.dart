@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/mvvm/model_views/counterViewModel.dart';
+import 'package:flutter_widget/mvvm/model_views/postVewModel.dart';
 import 'package:flutter_widget/providers/dataProvider.dart';
 import 'package:flutter_widget/welcomeScreen.dart';
 import 'package:provider/provider.dart';
@@ -12,6 +13,9 @@ void main() {
       ),
       ChangeNotifierProvider(
         create: (context) => CounterViewModel(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => PostViewModel(),
       ),
     ],
     child: const MyApp(),

@@ -3,7 +3,7 @@ import 'package:flutter_widget/mvvm/model_views/userViewModel.dart';
 import 'package:provider/provider.dart';
 
 class AuthenticaedView extends StatefulWidget {
-  AuthenticaedView({super.key});
+  const AuthenticaedView({super.key});
 
   @override
   State<AuthenticaedView> createState() => _AuthenticaedViewState();

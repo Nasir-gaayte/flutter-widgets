@@ -12,7 +12,7 @@ class CardDetail extends StatelessWidget {
         title: Text(cardmodel.title),
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           height: 700,
           child: Column(
             children: [

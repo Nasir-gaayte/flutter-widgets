@@ -1,0 +1,14 @@
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/flutter_widget.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/edit_cache.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/rebuild_cache.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/list_install_components.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/install.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/install/local.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/CMakeFiles/install/strip.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/flutter_assemble.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/edit_cache.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/rebuild_cache.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/list_install_components.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/install.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/install/local.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/build/flutter/CMakeFiles/install/strip.dir

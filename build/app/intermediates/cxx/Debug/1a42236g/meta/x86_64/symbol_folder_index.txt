@@ -1,0 +1,1 @@
+/home/nasir/newLessons/fluttertip/flutter_widget/build/app/intermediates/cxx/Debug/1a42236g/obj/x86_64

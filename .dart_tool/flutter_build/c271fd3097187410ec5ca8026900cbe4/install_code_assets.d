@@ -1,0 +1,1 @@
+ /home/nasir/newLessons/fluttertip/flutter_widget/.dart_tool/flutter_build/c271fd3097187410ec5ca8026900cbe4/native_assets.json: 

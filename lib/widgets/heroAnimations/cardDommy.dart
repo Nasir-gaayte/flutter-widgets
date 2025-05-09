@@ -15,7 +15,7 @@ class Cardmodel {
 }
 
 class DommyProvider with ChangeNotifier {
-  List<Cardmodel> _carditem = [
+  final List<Cardmodel> _carditem = [
     Cardmodel(
       title: 'Title 1',
       subtitle: 'Subtitle 1',

@@ -1,0 +1,5 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "cmake.sourceDirectory": "/home/nasir/newLessons/fluttertip/flutter_widget/linux"
+}

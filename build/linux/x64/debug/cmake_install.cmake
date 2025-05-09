@@ -37,13 +37,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/snap/flutter/current/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   
   file(REMOVE_RECURSE "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/")
   
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/flutter_widget" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/flutter_widget")
     file(RPATH_CHECK
@@ -58,7 +63,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/intermediates_do_not_run/flutter_widget")
+  file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/intermediates_do_not_run/flutter_widget")
   if(EXISTS "$ENV{DESTDIR}/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/flutter_widget" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/flutter_widget")
     file(RPATH_CHANGE
@@ -71,7 +76,7 @@ file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build
   endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data/icudtl.dat")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -80,10 +85,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/nasir/newLessons/fluttertip/flutter_widget/linux/flutter/ephemeral/icudtl.dat")
+  file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/nasir/newLessons/fluttertip/flutter_widget/linux/flutter/ephemeral/icudtl.dat")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -92,10 +97,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/nasir/newLessons/fluttertip/flutter_widget/linux/flutter/ephemeral/libflutter_linux_gtk.so")
+  file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/nasir/newLessons/fluttertip/flutter_widget/linux/flutter/ephemeral/libflutter_linux_gtk.so")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/lib/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -104,16 +109,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/nasir/newLessons/fluttertip/flutter_widget/build/native_assets/linux/")
+  file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/nasir/newLessons/fluttertip/flutter_widget/build/native_assets/linux/")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   
   file(REMOVE_RECURSE "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data/flutter_assets")
   
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data/flutter_assets")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -122,7 +127,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/nasir/newLessons/fluttertip/flutter_widget/build//flutter_assets")
+  file(INSTALL DESTINATION "/home/nasir/newLessons/fluttertip/flutter_widget/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/nasir/newLessons/fluttertip/flutter_widget/build//flutter_assets")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

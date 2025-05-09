@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widget/mvvm/models/conterModels.dart';
 
 class CounterViewModel with ChangeNotifier {
-  CounterModel _counterModel = CounterModel(counter: 0);
+  final CounterModel _counterModel = CounterModel(counter: 0);
 
   int get counter => _counterModel.counter;
 

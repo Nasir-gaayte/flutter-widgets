@@ -1,0 +1,2 @@
+/home/nasir/newLessons/fluttertip/flutter_widget/android/app/.cxx/Debug/1a42236g/x86_64/CMakeFiles/rebuild_cache.dir
+/home/nasir/newLessons/fluttertip/flutter_widget/android/app/.cxx/Debug/1a42236g/x86_64/CMakeFiles/edit_cache.dir

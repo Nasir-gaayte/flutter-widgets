@@ -22,6 +22,7 @@ import 'package:flutter_widget/widgets/myDrawer.dart';
 import 'package:flutter_widget/widgets/refreshPage.dart';
 import 'package:flutter_widget/widgets/responsive_screen.dart';
 import 'package:flutter_widget/widgets/richText.dart';
+import 'package:flutter_widget/widgets/textfield.dart';
 import 'package:flutter_widget/widgets/youtopPlayer.dart';
 
 class HomePage extends StatefulWidget {
@@ -56,6 +57,7 @@ class _HomePageState extends State<HomePage>
     Center(child: PostView()),
     Center(child: AuthenticaedView()),
     Center(child: HeroAnimations()),
+    Center(child: TextFieldWidget()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
     Center(child: ContainerW()),
@@ -86,6 +88,7 @@ class _HomePageState extends State<HomePage>
     const Text('Api Post View'),
     const Text('Authenticaed'),
     const Text('HeroAinmation'),
+    const Text('TextField'),
     const Text('contact'),
     const Text('contact'),
     const Text('contact'),
